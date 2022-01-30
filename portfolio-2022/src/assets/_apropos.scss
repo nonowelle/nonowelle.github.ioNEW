@@ -1,0 +1,140 @@
+.apropos {
+  padding: 8rem 8rem 2rem 8rem;
+  background-color: $gris;
+  .para {
+    padding-top: 2rem;
+    color: $bleu-gris;
+    text-align: center;
+    max-width: 55rem;
+    margin: 0 auto;
+  }
+}
+
+.titre-apropos {
+  text-align: center;
+}
+.parcours {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3rem;
+  display: grid;
+  position: relative;
+}
+
+.etudes {
+  grid-row: 1;
+  grid-column: 1;
+  min-height: 33rem;
+  min-width: 20rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+}
+
+.entries {
+  min-height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    bottom: 4rem;
+    transform: translateX(-50%);
+    width: 3px;
+    background-color: $bleu-gris;
+  }
+}
+
+.entry {
+  width: calc(50% - 4rem);
+  float: left;
+  padding: 2rem;
+  clear: both;
+  text-align: right;
+  &:not(:first-child) {
+    margin-top: -4rem;
+  }
+  &:nth-child(2n) {
+    text-align: left;
+    float: right;
+    .title {
+      &:before {
+        left: -6.5rem;
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: $bleu-gris;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.25rem solid $jaune;
+    background-color: $bleu-gris;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -6.5rem;
+    z-index: 1000;
+  }
+}
+
+.job-title {
+  color: $bleu-gris;
+  font-size: 1.1rem;
+}
+
+.job-desc {
+  color: $gris-pale;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-link {
+  text-decoration: none;
+  color: $bleu-gris;
+  transition: color 0.3s;
+  &:visited {
+    text-decoration: none;
+    color: $bleu-gris;
+  }
+  &:hover {
+    color: $jaune;
+  }
+}
+
+.cv {
+  margin: 2rem auto;
+  text-align: center;
+  width: 100%;
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+// ----------------- MEDIA - QUERIES ----------- //
+
+@media (max-width: 767px) {
+  .apropos {
+    padding: 5rem 4rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    color: $bleu-gris;
+  }
+
+  .parcours {
+    display: none;
+  }
+}

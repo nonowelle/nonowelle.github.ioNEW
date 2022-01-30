@@ -1,0 +1,49 @@
+.contact {
+  background-color: $bleu-gris;
+  padding: 6rem 8rem;
+  text-align: center;
+
+  p {
+    color: $gris;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+.contact-link {
+  color: $gris;
+
+  &:hover {
+    color: $jaune;
+    cursor: pointer;
+  }
+}
+
+.res {
+  i {
+    margin: 2rem 0.5rem;
+    font-size: 1.5rem;
+    color: $gris;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $jaune;
+    }
+  }
+}
+
+.title-contact {
+  color: $gris;
+}
+
+#copyright {
+  font-size: 0.8rem;
+}
+
+// ------------------ MEDIA-QUERIES ------------------//
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 6rem 4rem;
+  }
+}

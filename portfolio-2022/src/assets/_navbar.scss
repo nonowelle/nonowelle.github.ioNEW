@@ -1,0 +1,172 @@
+// ----------- NEW NAVBAR-------------------
+.header {
+  width: 100%;
+  background-color: $bleu-gris;
+}
+
+.navbar {
+  display: inline-block;
+  background-color: $bleu-gris;
+  width: 100%;
+  max-height: 0;
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $jaune;
+  }
+}
+
+.menu {
+  float: right;
+  margin: 0;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-grow: 1;
+
+  span {
+    display: block;
+    border-radius: 15px;
+    width: 25px;
+    height: 3px;
+    background-color: $jaune;
+    margin: 5px;
+    transition: all 0.4s ease;
+  }
+}
+
+// ---------------TOOLTIP -------------------
+.navli {
+  transition: opacity 0.4s ease-out;
+  list-style-type: none;
+  padding: 1.4rem 1.6rem;
+  display: inline;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.en {
+  padding-right: 4rem;
+}
+
+.email {
+  display: none;
+  visibility: hidden;
+}
+
+.anglais {
+  display: none;
+  visibility: hidden;
+}
+
+// ----------------MEDIA-QUERIES -----------------------//
+
+@media (max-width: 420px) {
+  .navli {
+    padding: 1rem 0.8rem;
+  }
+  .navbar {
+    padding: 0 1rem;
+
+    a {
+      font-size: 0.5rem;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    max-width: 100%;
+    line-height: 0;
+    padding: 0;
+  }
+  .navbar {
+    float: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s linear;
+    position: fixed;
+    z-index: 1500;
+
+    .menu {
+      width: 100%;
+      margin: 2rem 0;
+      padding: 0 4rem;
+      list-style-type: none;
+      line-height: 4rem;
+      background-color: $bleu-gris;
+
+      .navli {
+        float: none;
+        padding: 0.5rem;
+        opacity: 1;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      li {
+        display: block;
+        list-style: none;
+        opacity: 1;
+
+        a {
+          font-size: 2.7rem;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // ------- MENU EXPANDING ANIMATION --------//
+  .expand {
+    max-height: 100vh;
+    border-bottom: 2px solid $jaune;
+    position: fixed;
+    z-index: 1500;
+    display: block;
+  }
+  // ------------------------------------ //
+
+  .email {
+    color: $gris;
+    visibility: visible;
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    right: 3rem;
+    top: 1.5rem;
+    z-index: 1501;
+    &:hover {
+      opacity: 0.85;
+      text-decoration: none;
+      border: none;
+    }
+  }
+
+  //-----------ICON MENU ANIMATION---------------//
+  .span-animate {
+    span {
+      &:first-child {
+        transform: rotate(-135deg) translate(-17px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(135deg) translate(-17px, -5px);
+      }
+    }
+  }
+}

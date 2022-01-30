@@ -17,8 +17,8 @@
         plus d’un tour dans son sac!
       </p>
     </div>
-    <a class="rond-fleche show-on-scroll-left">
-      <i class="fas fa-arrow-down fleche"></i>
+    <a class="rond-fleche show-on-scroll-left" v-on:click="scrollToSection">
+      <i class="fas fa-arrow-down fleche" ref="fleche"></i>
     </a>
   </section>
 </template>
@@ -26,8 +26,22 @@
 <script>
 export default {
   name: "Hero",
-  props: {
-    msg: String,
+  methods: {
+    hoverEffects() {
+      //--------------BOUTON VERS À PROPOS ---------------------//
+      // $(".rond-fleche").click(function () {
+      //   $("html, body").animate(
+      //     { scrollTop: $(".apropos").offset().top },
+      //     "2000"
+      //   );
+      // });
+    },
+    scrollToSection() {
+      console.log("SCROLLTOSECTION");
+    },
+  },
+  mounted() {
+    this.hoverEffects();
   },
 };
 </script>

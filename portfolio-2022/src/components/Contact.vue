@@ -23,12 +23,31 @@
       ></a>
     </div>
     <p id="copyright" class="show-on-scroll-left">&copy; Marie-Ève Noël 2021</p>
-    <a id="button" class="button"></a>
+    <a id="button" ref="button" class="button" v-on:click="scrollToTop"></a>
   </section>
 </template>
 
 <script>
 export default {
   name: "Contact",
+  methods: {
+    scrollToTop() {
+      //   const btn = this.refs.button;
+
+      //   window.onscroll(function () {
+      //     if (window.scrollTop() > 300) {
+      //       btn.addClass("show");
+      //     } else {
+      //       btn.removeClass("show");
+      //     }
+      //   });
+
+      //   btn.on("click", function (e) {
+      //     e.preventDefault();
+      //     document.getElementsByTagName("body").animate({ scrollTop: 0 }, "8000");
+      //   });
+      console.log("scrollingToTop");
+    },
+  },
 };
 </script>

@@ -102,7 +102,7 @@ p {
   bottom: 2rem;
   right: 3rem;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
+  opacity: 1;
 
   &:hover {
     cursor: pointer;

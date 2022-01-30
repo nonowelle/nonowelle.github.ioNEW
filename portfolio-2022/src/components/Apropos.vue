@@ -1,5 +1,5 @@
 <template>
-  <section class="apropos" id="apropos">
+  <div class="apropos" id="apropos">
     <h2 class="titre-apropos show-on-scroll-left">À propos</h2>
     <p class="para show-on-scroll-left">
       Avant de me lancer dans le développement front-end, j'ai évolué dans le
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

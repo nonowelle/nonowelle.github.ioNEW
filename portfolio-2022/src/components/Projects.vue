@@ -1,7 +1,36 @@
 <template>
   <section class="projets" id="projets">
     <h2 class="show-on-scroll-left">Mes projets</h2>
-    <div class="planties">
+    <li v-for="project in projects" :key="project">
+      <div class="planties">
+        <img :src="project.img" alt="" />
+        <div>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <div>
+            <p>Technologies utilisées :</p>
+            <span class="tech"
+              ><li v-for="tech in project.techs" :key="tech" class="techs">
+                {{ tech }}
+              </li></span
+            >
+          </div>
+
+          <div class="btn">
+            <a target="_blank" :href="project.links[0]" class="site"
+              >Site Web <i class="fas fa-long-arrow-alt-right lien"></i
+            ></a>
+          </div>
+          <div v-if="project.links[1]" class="btn">
+            <a target="_blank" :href="project.links[1]" class="site"
+              >Code <i class="fas fa-long-arrow-alt-right lien"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- <div class="planties">
       <img
         class="projets-img show-on-scroll-left"
         :src="projects[0].img"
@@ -88,7 +117,7 @@
         :src="projects[2].img"
         alt=""
       />
-    </div>
+    </div> -->
   </section>
 </template>
 

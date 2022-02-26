@@ -55,7 +55,7 @@ export default {
           title: "mai 2021 à aujourd'hui",
           jobs: [
             {
-              jobTitle: "Front-End Web Developer - Coveo",
+              jobTitle: "Front-End Developer - Coveo",
               link: "https://www.coveo.com/",
               jobDesc: "Design - CSS - JS - Vue - GTM - Figma",
             },

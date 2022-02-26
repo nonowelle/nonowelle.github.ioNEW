@@ -1,8 +1,14 @@
 <template>
   <section class="projets" id="projets">
     <h2 class="show-on-scroll-left">Mes projets</h2>
-    <li v-for="project in projects" :key="project">
-      <div class="project-details show-on-scroll-right">
+    <li v-for="(project, index) in projects" :key="project">
+      <div
+        class="project-details"
+        :class="{
+          'show-on-scroll-left': index % 2 === 0,
+          'show-on-scroll-right': index % 2 !== 0,
+        }"
+      >
         <img :src="project.img" alt="" />
         <div class="project-text">
           <h3>{{ project.title }}</h3>

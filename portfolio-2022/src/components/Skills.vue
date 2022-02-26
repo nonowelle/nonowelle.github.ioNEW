@@ -1,32 +1,13 @@
 <template>
   <section class="skills" id="skills">
-    <h2 class="comp show-on-scroll-left">Compétences</h2>
+    <h2 class="comp show-on-scroll-left">{{ title.fr }}</h2>
     <div class="container">
-      <div class="grid show-on-scroll-right">
-        <div class="logo"><img src="imgs/html5-css3-js.png" alt="" /></div>
-        <div class="logo"><img src="imgs/sass.png" alt="logo-sass" /></div>
-        <div class="logo"><img src="imgs/jquery.png" alt="logo-jquery" /></div>
-        <div class="logo"><img src="imgs/node-js.png" alt="logo-nodejs" /></div>
-        <div class="logo"><img src="imgs/express.png" alt="logo-nodejs" /></div>
-        <div class="logo">
-          <img
-            src="imgs/MongoDB_Logo_FullColorBlack_RGB.png"
-            id="mongo"
-            alt="logo-mongodb"
-          />
-        </div>
-        <div class="logo">
-          <img src="imgs/sketch-symbol-transparent@2x.png" alt="logo-sketch" />
-        </div>
-        <div class="logo">
-          <img src="imgs/figma-1-logo-png-transparent.png" alt="" />
-        </div>
-        <div class="logo">
-          <img src="imgs/analytics.png" alt="logo-google-analytics" />
-        </div>
-        <div class="logo">
-          <img src="imgs/tag-manager.png" alt="logo-google-analytics" />
-        </div>
+      <div class="show-on-scroll-right">
+        <ul class="grid">
+          <li v-for="link in links" :key="link" class="logo">
+            <img :src="link.src" alt="" />
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -35,5 +16,45 @@
 <script>
 export default {
   name: "Skills",
+  data() {
+    return {
+      title: {
+        fr: "Compétences",
+        en: "Skills",
+      },
+      links: [
+        {
+          src: "imgs/html5-css3-js.png",
+        },
+        {
+          src: "imgs/sass.png",
+        },
+        {
+          src: "imgs/jquery.png",
+        },
+        {
+          src: "imgs/node-js.png",
+        },
+        {
+          src: "imgs/express.png",
+        },
+        {
+          src: "imgs/MongoDB_Logo_FullColorBlack_RGB.png",
+        },
+        {
+          src: "imgs/sketch-symbol-transparent@2x.png",
+        },
+        {
+          src: "imgs/figma-1-logo-png-transparent.png",
+        },
+        {
+          src: "imgs/analytics.png",
+        },
+        {
+          src: "imgs/tag-manager.png",
+        },
+      ],
+    };
+  },
 };
 </script>

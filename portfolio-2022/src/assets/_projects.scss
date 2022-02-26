@@ -16,9 +16,46 @@
   }
 }
 
-.projets-img {
-  height: auto;
-  width: 90%;
+.project-details {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 2;
+  column-gap: 3rem;
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  @media (max-width: 1023px) {
+    grid-template-rows: 3;
+    grid-template-columns: 1;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    margin-bottom: 1.5rem;
+
+    height: auto;
+    width: 90%;
+
+    @media (max-width: 1023px) {
+      grid-row: 2/3;
+      grid-column: 1/1;
+      width: 90%;
+    }
+  }
+  .project-text {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    align-self: center;
+    margin-bottom: 1rem;
+    @media (max-width: 1023px) {
+      grid-row: 1/1;
+      grid-column: 1/1;
+    }
+  }
 }
 
 .show-on-scroll-left {
@@ -53,80 +90,80 @@
 }
 
 //---------PLANTIES PROJECT---------//
-.planties {
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
-  column-gap: 3rem;
-  grid-row: 2/3;
-  grid-column: 1/2;
+// .planties {
+//   display: grid;
+//   grid-template-rows: 2;
+//   grid-template-columns: 2;
+//   column-gap: 3rem;
+//   grid-row: 2/3;
+//   grid-column: 1/2;
 
-  img {
-    grid-row: 1/2;
-    grid-column: 1/1;
-    align-self: center;
-    margin-bottom: 1.5rem;
-  }
+//   img {
+//     grid-row: 1/2;
+//     grid-column: 1/1;
+//     align-self: center;
+//     margin-bottom: 1.5rem;
+//   }
 
-  .planties-texte {
-    grid-row: 1/1;
-    grid-column: 2/2;
-    align-self: center;
-    margin-bottom: 1rem;
-  }
-}
+//   .planties-texte {
+//     grid-row: 1/1;
+//     grid-column: 2/2;
+//     align-self: center;
+//     margin-bottom: 1rem;
+//   }
+// }
 
-//CRISM PROJECT
-.crism {
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
-  column-gap: 3rem;
-  grid-row: 3/4;
+// //CRISM PROJECT
+// .crism {
+//   display: grid;
+//   grid-template-rows: 2;
+//   grid-template-columns: 2;
+//   column-gap: 3rem;
+//   grid-row: 3/4;
 
-  img {
-    grid-row: 1/2;
-    grid-column: 2/2;
-    align-self: center;
-    margin-bottom: 1.5rem;
-  }
+//   img {
+//     grid-row: 1/2;
+//     grid-column: 2/2;
+//     align-self: center;
+//     margin-bottom: 1.5rem;
+//   }
 
-  .crism-texte {
-    align-self: center;
-    margin-bottom: 1rem;
-  }
-}
+//   .crism-texte {
+//     align-self: center;
+//     margin-bottom: 1rem;
+//   }
+// }
 
-//FRONT-END MENTOR CHALLENGES
-.landing {
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
-  column-gap: 3rem;
-  grid-row: 4/5;
-  grid-column: 1/2;
+// //FRONT-END MENTOR CHALLENGES
+// .landing {
+//   display: grid;
+//   grid-template-rows: 2;
+//   grid-template-columns: 2;
+//   column-gap: 3rem;
+//   grid-row: 4/5;
+//   grid-column: 1/2;
 
-  img {
-    grid-row: 1/2;
-    grid-column-start: 1/1;
-    align-self: center;
-    margin-bottom: 1.5rem;
-  }
+//   img {
+//     grid-row: 1/2;
+//     grid-column-start: 1/1;
+//     align-self: center;
+//     margin-bottom: 1.5rem;
+//   }
 
-  .landing-texte {
-    grid-row: 1/2;
-    grid-column: 2/2;
-    align-self: center;
-    margin-bottom: 1rem;
-  }
-}
+//   .landing-texte {
+//     grid-row: 1/2;
+//     grid-column: 2/2;
+//     align-self: center;
+//     margin-bottom: 1rem;
+//   }
+// }
 
-.tech {
-  color: $gris-pale;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  margin-left: 0.5rem;
-}
+// .tech {
+//   color: $gris-pale;
+//   font-size: 1rem;
+//   letter-spacing: 0.1rem;
+//   margin-left: 0.5rem;
+// }
 
 // ------------ MEDIA-QUERIES ------------ //
 @media (max-width: 767px) {
@@ -167,37 +204,37 @@
     }
   }
 
-  .planties {
-    grid-template-rows: 3;
-    grid-template-columns: 1;
-    grid-row: 2/3;
-    grid-column: 1/2;
+  // .project-details {
+  //   grid-template-rows: 3;
+  //   grid-template-columns: 1;
+  //   grid-row: 2/3;
+  //   grid-column: 1/2;
 
-    img {
-      grid-row: 2/3;
-      grid-column: 1/1;
-    }
+  //   img {
+  //     grid-row: 2/3;
+  //     grid-column: 1/1;
+  //   }
 
-    .planties-texte {
-      grid-row: 1/1;
-      grid-column: 1/1;
-    }
-  }
+  //   .project-text {
+  //     grid-row: 1/1;
+  //     grid-column: 1/1;
+  //   }
+  // }
 
-  .crism {
-    grid-template-rows: 3;
-    grid-template-columns: 1;
+  // .crism {
+  //   grid-template-rows: 3;
+  //   grid-template-columns: 1;
 
-    img {
-      grid-row: 2/3;
-      grid-column: 1/1;
-      align-self: center;
-    }
+  //   img {
+  //     grid-row: 2/3;
+  //     grid-column: 1/1;
+  //     align-self: center;
+  //   }
 
-    .crism-texte {
-      align-self: center;
-    }
-  }
+  //   .crism-texte {
+  //     align-self: center;
+  //   }
+  // }
 
   .landing {
     grid-template-rows: 3;

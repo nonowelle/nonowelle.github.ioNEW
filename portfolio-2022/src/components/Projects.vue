@@ -2,11 +2,11 @@
   <section class="projets" id="projets">
     <h2 class="show-on-scroll-left">Mes projets</h2>
     <li v-for="project in projects" :key="project">
-      <div class="planties">
+      <div class="project-details show-on-scroll-right">
         <img :src="project.img" alt="" />
-        <div>
+        <div class="project-text">
           <h3>{{ project.title }}</h3>
-          <p>{{ project.description }}</p>
+          <p class="project-description">{{ project.description }}</p>
           <div>
             <p>Technologies utilisées :</p>
             <span class="tech"
@@ -29,95 +29,6 @@
         </div>
       </div>
     </li>
-
-    <!-- <div class="planties">
-      <img
-        class="projets-img show-on-scroll-left"
-        :src="projects[0].img"
-        alt="captures-ecran-pages-web"
-      />
-      <div class="planties-texte show-on-scroll-right">
-        <h3>{{ projects[0].title }}</h3>
-        <p>{{ projects[0].description }}</p>
-
-        <p>
-          Technologies utilisées :
-          <span class="tech"
-            ><li v-for="tech in projects[0].techs" :key="tech">
-              {{ tech }}
-            </li></span
-          >
-        </p>
-        <div class="btn">
-          <a target="_blank" :href="projects[0].links[0]" class="site"
-            >Site Web <i class="fas fa-long-arrow-alt-right lien"></i
-          ></a>
-        </div>
-        <div class="btn" type="button">
-          <a target="_blank" :href="projects[0].links[1]" class="site"
-            >Code <i class="fas fa-long-arrow-alt-right lien"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-    <div class="crism">
-      <div class="crism-texte show-on-scroll-left">
-        <h3>{{ projects[1].title }}</h3>
-        <p>
-          {{ projects[1].description }}
-        </p>
-        <p>
-          Technologies utilisées :
-          <span class="tech"
-            ><li v-for="tech in projects[1].techs" :key="tech">
-              {{ tech }}
-            </li>
-          </span>
-        </p>
-        <div class="btn">
-          <a target="_blank" :href="projects[1].links[0]" class="site"
-            >Site Web <i class="fas fa-long-arrow-alt-right lien"></i
-          ></a>
-        </div>
-      </div>
-      <img
-        class="show-on-scroll-right projets-img show-on-scroll"
-        :src="projects[1].img"
-        alt="captures-ecran-pages-web"
-      />
-    </div>
-
-    <div class="landing">
-      <div class="landing-texte show-on-scroll-right">
-        <h3>{{ projects[2].title }}</h3>
-        <p>
-          {{ projects[2].description }}
-        </p>
-        <p>
-          Technologies utilisées :
-          <span class="tech"
-            ><li v-for="tech in projects[2].techs" :key="tech">
-              {{ tech }}
-            </li></span
-          >
-        </p>
-        <div class="btn">
-          <a target="_blank" :href="projects[2].links[0]" class="site"
-            >Site Web <i class="fas fa-long-arrow-alt-right lien"></i
-          ></a>
-        </div>
-        <div class="btn" type="button">
-          <a target="_blank" :href="projects[2].links[0]" class="site"
-            >Code <i class="fas fa-long-arrow-alt-right lien"></i
-          ></a>
-        </div>
-      </div>
-      <img
-        class="projets-img show-on-scroll-left"
-        :src="projects[2].img"
-        alt=""
-      />
-    </div> -->
   </section>
 </template>
 

@@ -47,6 +47,7 @@ export default {
         });
         scroll(loopL);
       }
+
       loopL();
 
       let elementsToShowRight = document.querySelectorAll(

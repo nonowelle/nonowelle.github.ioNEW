@@ -87,6 +87,13 @@
   will-change: width, opacity;
   transform: translateX(1rem);
   opacity: 0;
+
+  img {
+    grid-column: 2/2;
+  }
+  .project-text {
+    grid-column: 1/2;
+  }
 }
 
 .is-visible-left {

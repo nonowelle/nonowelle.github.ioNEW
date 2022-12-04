@@ -1,9 +1,12 @@
-import Vue from "vue";
-import App from "./App.vue";
-import "./assets/styles.scss";
+import Vue from 'vue';
+import Vue2SmoothScroll from 'vue2-smooth-scroll';
+import App from './App.vue';
+import './assets/styles.scss';
 
 // Vue.config.productionTip = false;
+Vue.use(Vue2SmoothScroll, { duration: 1500, updateHistory: false });
 
-new Vue({
+const vue = new Vue({
   render: (h) => h(App),
-}).$mount("#app");
+});
+vue.$mount('#app');

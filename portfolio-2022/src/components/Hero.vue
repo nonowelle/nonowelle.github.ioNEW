@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="#hero">
     <section class="accueil">
       <div class="triangles show-on-scroll-right">
         <div class="un"></div>
@@ -19,7 +19,7 @@
         </p>
       </div>
     </section>
-    <a class="rond-fleche show-on-scroll-left" v-on:click="scrollToSection">
+    <a class="rond-fleche show-on-scroll-left" v-smooth-scroll href="#apropos">
       <i class="fas fa-arrow-down fleche" ref="fleche"></i>
     </a>
   </div>
@@ -27,23 +27,6 @@
 
 <script>
 export default {
-  name: "Hero",
-  methods: {
-    hoverEffects() {
-      //--------------BOUTON VERS À PROPOS ---------------------//
-      // $(".rond-fleche").click(function () {
-      //   $("html, body").animate(
-      //     { scrollTop: $(".apropos").offset().top },
-      //     "2000"
-      //   );
-      // });
-    },
-    scrollToSection() {
-      console.log("SCROLLTOSECTION");
-    },
-  },
-  mounted() {
-    this.hoverEffects();
-  },
+  name: 'Hero',
 };
 </script>

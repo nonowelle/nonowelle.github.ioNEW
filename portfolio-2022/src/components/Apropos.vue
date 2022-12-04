@@ -16,7 +16,7 @@
           <ul>
             <li
               v-for="(entry, index) in entries"
-              :key="entry"
+              :key="entry.title"
               :class="{
                 'show-on-scroll-left': index % 2 === 0,
                 'show-on-scroll-right': index % 2 !== 0,
@@ -26,7 +26,7 @@
               <p class="title">{{ entry.title }}</p>
               <div class="desc">
                 <ul>
-                  <li v-for="job in entry.jobs" :key="job">
+                  <li v-for="job in entry.jobs" :key="job.jobTitle">
                     <div class="desc">
                       <p class="job-title">{{ job.jobTitle }}</p>
                       <p class="job-desc">{{ job.jobDesc }}</p>
@@ -44,10 +44,10 @@
 
 <script>
 export default {
-  name: "Apropos",
+  name: 'Apropos',
   data() {
     return {
-      title: "À propos",
+      title: 'À propos',
       texte:
         "Avant de me lancer dans le développement front-end, j'ai évolué dans le domaine des langues et du marketing. J'ai une passion pour les langages, qu'ils soient linguistiques ou informatiques. Grâce à eux, non seulement je peux communiquer, mais je peux maintenant donner vie à des designs Web élégants et responsive. Envie d'en savoir plus?",
       entries: [
@@ -55,58 +55,58 @@ export default {
           title: "mai 2021 à aujourd'hui",
           jobs: [
             {
-              jobTitle: "Front-End Developer - Coveo",
-              link: "https://www.coveo.com/",
-              jobDesc: "Design - CSS - JS - Vue - GTM - Figma",
+              jobTitle: 'Front-End Developer - Coveo',
+              link: 'https://www.coveo.com/',
+              jobDesc: 'Design - CSS - JS - Vue - GTM - Figma',
             },
           ],
         },
         {
-          title: "2020",
+          title: '2020',
           jobs: [
             {
-              jobTitle: "Webmaster - CRISM",
-              link: "https://www.crismquebecatlantic.ca/",
+              jobTitle: 'Webmaster - CRISM',
+              link: 'https://www.crismquebecatlantic.ca/',
               jobDesc:
-                "Intégration Wordpress - Design - SEO- Rédaction - Gestion de contenu",
+                'Intégration Wordpress - Design - SEO- Rédaction - Gestion de contenu',
             },
 
             {
-              jobTitle: "The Modern Javascript Bootcamp",
-              link: "https://www.udemy.com/course/javascript-beginners-complete-tutorial/",
-              jobDesc: "En cours",
+              jobTitle: 'The Modern Javascript Bootcamp',
+              link: 'https://www.udemy.com/course/javascript-beginners-complete-tutorial/',
+              jobDesc: 'En cours',
             },
             {
-              jobTitle: "The Web Developer Bootcamp 2020 Certification",
-              link: "https://www.udemy.com/course/the-web-developer-bootcamp/",
-              jobDesc: "Complété",
-            },
-          ],
-        },
-        {
-          title: "2019",
-          jobs: [
-            {
-              jobTitle: "DESS en Gestion - ESG",
+              jobTitle: 'The Web Developer Bootcamp 2020 Certification',
+              link: 'https://www.udemy.com/course/the-web-developer-bootcamp/',
+              jobDesc: 'Complété',
             },
           ],
         },
         {
-          title: "2018-2019",
+          title: '2019',
           jobs: [
             {
-              jobTitle: " Agente au marketing - Druide informatique",
-              link: "www.druide.com",
+              jobTitle: 'DESS en Gestion - ESG',
+            },
+          ],
+        },
+        {
+          title: '2018-2019',
+          jobs: [
+            {
+              jobTitle: ' Agente au marketing - Druide informatique',
+              link: 'www.druide.com',
               jobDesc:
-                "SEO - Marketing numérique - Intégration Web - Gestion des commandites - Rédaction",
+                'SEO - Marketing numérique - Intégration Web - Gestion des commandites - Rédaction',
             },
           ],
         },
         {
-          title: "2016",
+          title: '2016',
           jobs: [
             {
-              jobTitle: "Maîtrise études hispaniques",
+              jobTitle: 'Maîtrise études hispaniques',
             },
           ],
         },

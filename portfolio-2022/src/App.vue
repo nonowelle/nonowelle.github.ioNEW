@@ -10,15 +10,15 @@
 </template>
 
 <script>
-import Hero from "./components/Hero.vue";
-import Header from "./components/Header.vue";
-import Apropos from "./components/Apropos.vue";
-import Skills from "./components/Skills.vue";
-import Projects from "./components/Projects.vue";
-import Contact from "./components/Contact.vue";
+import Hero from './components/Hero.vue';
+import Header from './components/Header.vue';
+import Apropos from './components/Apropos.vue';
+import Skills from './components/Skills.vue';
+import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Hero,
     Header,
@@ -35,14 +35,14 @@ export default {
           window.setTimeout(callback, 1000 / 60);
         };
 
-      let elementsToShow = document.querySelectorAll(".show-on-scroll-left");
+      let elementsToShow = document.querySelectorAll('.show-on-scroll-left');
 
       function loopL() {
         elementsToShow.forEach(function (element) {
           if (isElementInViewport(element)) {
-            element.classList.add("is-visible-left");
+            element.classList.add('is-visible-left');
           } else {
-            element.classList.remove("is-visible-left");
+            element.classList.remove('is-visible-left');
           }
         });
         scroll(loopL);
@@ -50,15 +50,15 @@ export default {
       loopL();
 
       let elementsToShowRight = document.querySelectorAll(
-        ".show-on-scroll-right"
+        '.show-on-scroll-right'
       );
 
       function loopR() {
         elementsToShowRight.forEach(function (element) {
           if (isElementInViewport(element)) {
-            element.classList.add("is-visible-right");
+            element.classList.add('is-visible-right');
           } else {
-            element.classList.remove("is-visible-right");
+            element.classList.remove('is-visible-right');
           }
         });
         scroll(loopR);
@@ -67,10 +67,6 @@ export default {
       loopR();
 
       function isElementInViewport(el) {
-        // because of jQuery
-        // if (typeof jQuery === "function" && el instanceof jQuery) {
-        //   el = el[0];
-        // }
         var rect = el.getBoundingClientRect();
         return (
           (rect.top <= 0 && rect.bottom >= 0) ||

@@ -30,6 +30,9 @@ export default {
           src: 'imgs/sass.png',
         },
         {
+          src: 'imgs/vue.png',
+        },
+        {
           src: 'imgs/jquery.png',
         },
         {
@@ -52,6 +55,9 @@ export default {
         },
         {
           src: 'imgs/tag-manager.png',
+        },
+        {
+          src: 'imgs/sitecore.png',
         },
       ],
     };

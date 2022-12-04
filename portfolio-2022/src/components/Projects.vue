@@ -15,11 +15,11 @@
           <p class="project-description">{{ project.description }}</p>
           <div>
             <p>Technologies utilisées :</p>
-            <span class="tech"
-              ><li v-for="tech in project.techs" :key="tech.id" class="techs">
-                {{ tech }}
-              </li></span
-            >
+            <div class="tech">
+              <li v-for="tech in project.techs" :key="tech.id" class="techs">
+                {{ tech.name }}
+              </li>
+            </div>
           </div>
 
           <div class="btn">

@@ -7,12 +7,27 @@
   row-gap: 6rem;
 
   p {
-    color: $bleu-gris;
+    color: $black;
     padding-top: 3rem;
+  }
+  .tech {
+    margin: 24px 0;
   }
 
   .techs {
     display: inline;
+    color: $mauve-pale;
+    background-color: $babyPowder;
+    border: 1px solid $mauve-pale;
+    border-radius: 8px;
+    margin-right: 15px;
+    padding: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $black;
+      border-color: $black;
+    }
   }
 }
 
@@ -84,7 +99,7 @@
 }
 
 .lien {
-  color: $bleu-gris;
+  color: $black;
   display: inline-block;
   padding: 1rem 0.5rem;
 }

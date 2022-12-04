@@ -1,12 +1,12 @@
 // ----------- NEW NAVBAR-------------------
 .header {
   width: 100%;
-  background-color: $bleu-gris;
+  background-color: $black;
 }
 
 .navbar {
   display: inline-block;
-  background-color: $bleu-gris;
+  background-color: $black;
   width: 100%;
   max-height: 0;
 
@@ -100,7 +100,7 @@
       padding: 0 4rem;
       list-style-type: none;
       line-height: 4rem;
-      background-color: $bleu-gris;
+      background-color: $black;
 
       .navli {
         float: none;

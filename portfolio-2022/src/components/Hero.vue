@@ -14,8 +14,8 @@
           Moi, c'est <span class="nom">Marie-Ève</span>.
         </h1>
         <p class="description">
-          Je suis une développeuse front-end passionnée basée à Montréal et qui
-          a plus d’un tour dans son sac!
+          Je suis une développeuse front-end québécoise basée à Madrid et qui a
+          plus d’un tour dans son sac!
         </p>
       </div>
     </section>

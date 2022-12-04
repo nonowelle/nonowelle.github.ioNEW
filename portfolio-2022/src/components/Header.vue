@@ -16,9 +16,7 @@
         <li class="navli">
           <a class="nav" id="licontact" href="#contact">Contact</a>
         </li>
-        <li class="navli">
-          <a class="nav" id="licontact" href="en.html">EN</a>
-        </li>
+
         <!-- <li class="navli en"><a class="nav" href="#">En</a></li> -->
         <li class="navli email">Contactez-moi : menoel888@gmail.com</li>
       </ul>
@@ -28,7 +26,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: 'Header',
   props: {
     msg: String,
   },

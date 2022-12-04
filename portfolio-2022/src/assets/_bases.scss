@@ -10,7 +10,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Poppins", "Convergence", sans-serif;
+  font-family: 'Poppins', 'Convergence', sans-serif;
   width: 100%;
   // color: black;
 }
@@ -30,12 +30,12 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  color: $bleu-gris;
+  color: $black;
 }
 
 h3 {
   font-size: 2rem;
-  color: $bleu-gris;
+  color: $black;
 }
 
 h4 {
@@ -47,12 +47,12 @@ h4 {
 h5 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: $bleu-gris;
+  color: $black;
 }
 
 h6 {
   font-size: 1.1rem;
-  color: $bleu-gris;
+  color: $black;
 }
 
 p {
@@ -75,7 +75,7 @@ p {
     font-size: 1.1rem;
     padding: 0;
     margin-bottom: 10px;
-    color: $bleu-gris;
+    color: $black;
     text-decoration: none;
     transition: 0.3s ease-out;
   }
@@ -117,12 +117,12 @@ p {
     background-color: #555;
   }
   &::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f077";
+    font-family: 'Font Awesome 5 Free';
+    content: '\f077';
     font-weight: 800;
     font-size: 2em;
     line-height: 3.1rem;
-    color: $bleu-gris;
+    color: $black;
   }
 }
 

@@ -78,7 +78,7 @@
     left: 5rem;
     border-left: 2rem $border-triangle;
     border-right: 2rem $border-triangle;
-    border-bottom: 4rem solid $rose;
+    border-bottom: 4rem solid $babyPowder;
   }
   50% {
     top: 3rem;
@@ -86,14 +86,14 @@
     transform: rotate(90deg);
     border-left: 4rem $border-triangle;
     border-right: 4rem $border-triangle;
-    border-bottom: 6rem solid $rose;
+    border-bottom: 6rem solid $babyPowder;
   }
 
   100% {
     left: 5rem;
     border-left: 2rem $border-triangle;
     border-right: 2rem $border-triangle;
-    border-bottom: 4rem solid $rose;
+    border-bottom: 4rem solid $babyPowder;
   }
 }
 
@@ -201,7 +201,7 @@
   position: relative;
   z-index: 1;
   margin: -2.5rem auto;
-  background: $bleu-gris;
+  background: $black;
   border: 3px solid $jaune;
   width: 5rem;
   height: 5rem;

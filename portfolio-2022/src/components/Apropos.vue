@@ -57,7 +57,8 @@ export default {
             {
               jobTitle: 'Front-End Developer - Coveo',
               link: 'https://www.coveo.com/',
-              jobDesc: 'Design - CSS - JS - Vue - GTM - Figma',
+              jobDesc:
+                'SCSS - JS - Vue - GTM - Figma - Typescript - Sitecore - Performance - Design',
             },
           ],
         },

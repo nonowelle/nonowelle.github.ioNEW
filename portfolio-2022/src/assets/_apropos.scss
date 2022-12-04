@@ -3,7 +3,7 @@
   background-color: $gris;
   .para {
     padding-top: 2rem;
-    color: $bleu-gris;
+    color: $black;
     text-align: center;
     max-width: 55rem;
     margin: 0 auto;
@@ -35,14 +35,14 @@
   min-height: 100%;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 3rem;
     left: 50%;
     bottom: 4rem;
     transform: translateX(-50%);
     width: 3px;
-    background-color: $bleu-gris;
+    background-color: $black;
   }
 }
 
@@ -71,14 +71,14 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   position: relative;
-  color: $bleu-gris;
+  color: $black;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 0.5rem;
     height: 0.5rem;
     border: 0.25rem solid $jaune;
-    background-color: $bleu-gris;
+    background-color: $black;
     border-radius: 100%;
     top: 50%;
     transform: translateY(-50%);
@@ -88,23 +88,24 @@
 }
 
 .job-title {
-  color: $bleu-gris;
+  color: $black;
   font-size: 1.1rem;
 }
 
 .job-desc {
-  color: $gris-pale;
-  font-size: 0.9rem;
+  color: $mauve-pale;
+  font-size: 0.8rem;
   margin-bottom: 1.5rem;
+  margin-top: 5px;
 }
 
 .job-link {
   text-decoration: none;
-  color: $bleu-gris;
+  color: $black;
   transition: color 0.3s;
   &:visited {
     text-decoration: none;
-    color: $bleu-gris;
+    color: $black;
   }
   &:hover {
     color: $jaune;
@@ -131,7 +132,7 @@
     font-size: 1rem;
     margin-bottom: 0.6rem;
     position: relative;
-    color: $bleu-gris;
+    color: $black;
   }
 
   .parcours {

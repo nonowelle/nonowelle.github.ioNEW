@@ -66,7 +66,7 @@ export default {
           id: 2,
           title: 'CRISM',
           description:
-            "À titre d'édimestre pour l'<em>Initiative canadienne de recherche en abus de substances </em>(CRISM), j'avais pour mandat de procéder à la refonte du visuel et du contenu du site Web de l'organisation. Je devais utiliser le thème Wordpress mis en place lors de la création du site, Jupiter 6. J'ai donc créé une nouvelle arborescence, établi une nouvelle palette de couleurs et créé des maquettes avec Figma pour finalement mettre en place le nouveau design. J'ai également procédé à l'ajout de métadecriptions via le plugin Yoast pour améliorer le référencement naturel.",
+            "À titre d'édimestre pour l'Initiative canadienne de recherche en abus de substances (CRISM), j'avais pour mandat de procéder à la refonte du visuel et du contenu du site Web de l'organisation. Je devais utiliser le thème Wordpress mis en place lors de la création du site, Jupiter 6. J'ai donc créé une nouvelle arborescence, établi une nouvelle palette de couleurs et créé des maquettes avec Figma pour finalement mettre en place le nouveau design. J'ai également procédé à l'ajout de métadecriptions via le plugin Yoast pour améliorer le référencement naturel.",
           img: 'imgs/CRISM.png',
           techs: [
             { name: 'Wordpress', id: 1 },
@@ -81,7 +81,7 @@ export default {
           id: 3,
           title: 'Page FAQ',
           description:
-            "Ce projet constitue mon troisième défi de Front-End Mentor Challenge. Il s'agit d'une section <em>Questions fréquentes</em> sous forme d'accordéon. Je devais reproduire le plus fidèlement possible le design qui m'avait été fourni en utilisant les outils de mon choix. Mon design devait être responsive et s'adapter à tous les navigateurs.",
+            "Ce projet constitue mon troisième défi de Front-End Mentor Challenge. Il s'agit d'une section Questions fréquentes sous forme d'accordéon. Je devais reproduire le plus fidèlement possible le design qui m'avait été fourni en utilisant les outils de mon choix. Mon design devait être responsive et s'adapter à tous les navigateurs.",
           img: '/imgs/accordion.png',
           techs: [
             { name: 'HTML', id: 1 },

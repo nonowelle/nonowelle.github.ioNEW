@@ -22,7 +22,7 @@
         ><i class="fab fa-github"></i
       ></a>
     </div>
-    <p id="copyright" class="show-on-scroll-left">&copy; Marie-Ève Noël 2022</p>
+    <p id="copyright" class="show-on-scroll-left">&copy; Marie-Ève Noël 2023</p>
     <a id="button" ref="button" class="button" v-smooth-scroll href="#app"></a>
   </section>
 </template>

@@ -118,7 +118,10 @@ p {
   }
   &::after {
     font-family: 'Font Awesome 5 Free';
-    content: '\f077';
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: ' \f077';
     font-weight: 800;
     font-size: 2em;
     line-height: 3.1rem;

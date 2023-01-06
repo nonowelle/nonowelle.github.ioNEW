@@ -8,13 +8,19 @@
     <nav class="navbar">
       <ul class="menu">
         <li class="navli">
-          <a class="nav" id="liapropos" href="#apropos">À propos</a>
+          <a class="nav" id="liapropos" v-smooth-scroll href="#apropos"
+            >À propos</a
+          >
         </li>
         <li class="navli">
-          <a class="nav" id="liprojets" href="#projets">Projets</a>
+          <a class="nav" id="liprojets" v-smooth-scroll href="#projets"
+            >Projets</a
+          >
         </li>
         <li class="navli">
-          <a class="nav" id="licontact" href="#contact">Contact</a>
+          <a class="nav" id="licontact" v-smooth-scroll href="#contact"
+            >Contact</a
+          >
         </li>
 
         <!-- <li class="navli en"><a class="nav" href="#">En</a></li> -->

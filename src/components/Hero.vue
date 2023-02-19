@@ -1,5 +1,5 @@
 <template>
-  <div class="" id="#hero">
+  <div class="hero" id="#hero">
     <section class="accueil">
       <div class="triangles show-on-scroll-right">
         <div class="un"></div>

@@ -1,23 +1,23 @@
 <template>
   <header class="header">
-    <div class="menu-icon">
+    <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" ref="navbar">
       <ul class="menu">
-        <li class="navli">
+        <li class="navli" @click="openMobileNav">
           <a class="nav" id="liapropos" v-smooth-scroll href="#apropos"
             >À propos</a
           >
         </li>
-        <li class="navli">
+        <li class="navli" @click="openMobileNav">
           <a class="nav" id="liprojets" v-smooth-scroll href="#projets"
             >Projets</a
           >
         </li>
-        <li class="navli">
+        <li class="navli" @click="openMobileNav">
           <a class="nav" id="licontact" v-smooth-scroll href="#contact"
             >Contact</a
           >
@@ -35,6 +35,18 @@ export default {
   name: 'Header',
   props: {
     msg: String,
+  },
+  methods: {
+    openMobileNav() {
+      console.log('opening');
+      if (!this.$refs.navbar.classList.contains('expand')) {
+        this.$refs.navbar.classList.add('expand');
+        this.$refs.menuIcon.classList.add('span-animate');
+      } else {
+        this.$refs.navbar.classList.remove('expand');
+        this.$refs.menuIcon.classList.remove('span-animate');
+      }
+    },
   },
 };
 </script>

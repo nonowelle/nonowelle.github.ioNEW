@@ -5,11 +5,6 @@
       {{ texte }}
     </p>
 
-    <div class="btn cv show-on-scroll-left">
-      <a target="_blank" href="./imgs/CV-2021.pdf" download="CV-MENoel"
-        ><b>CV</b> <i class="fas fa-long-arrow-alt-right lien"></i
-      ></a>
-    </div>
     <div class="parcours">
       <div class="etudes">
         <div class="entries">
@@ -49,7 +44,7 @@ export default {
     return {
       title: 'À propos',
       texte:
-        "Avant de me lancer dans le développement front-end, j'ai évolué dans le domaine des langues et du marketing. J'ai une passion pour les langages, qu'ils soient linguistiques ou informatiques. Grâce à eux, non seulement je peux communiquer, mais je peux maintenant donner vie à des designs Web élégants et responsive. Envie d'en savoir plus?",
+        "Avant de me lancer dans le développement front-end, j'ai évolué dans le domaine des langues et du marketing. J'ai une passion pour les langages, qu'ils soient linguistiques ou informatiques. Je travaille principalement en Vue.js. Envie d'en savoir plus?",
       entries: [
         {
           title: "mai 2021 à aujourd'hui",

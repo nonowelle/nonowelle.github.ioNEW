@@ -58,7 +58,7 @@ export default {
             { id: 5, name: 'EJS' },
           ],
           links: [
-            'https://serene-caverns-99636.herokuapp.com/',
+            'https://planties.onrender.com/',
             'https://github.com/nonowelle/planties',
           ],
         },

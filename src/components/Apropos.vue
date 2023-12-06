@@ -42,18 +42,18 @@ export default {
   name: 'Apropos',
   data() {
     return {
-      title: 'À propos',
+      title: 'About me',
       texte:
-        "Avant de me lancer dans le développement front-end, j'ai évolué dans le domaine des langues et du marketing. J'ai une passion pour les langages, qu'ils soient linguistiques ou informatiques. Je travaille principalement en Vue.js. Envie d'en savoir plus?",
+        "Before getting into web development, I worked in marketing for a few years. I'm passionnate about learning new languages - linguistic or programmatic. I mostly work in Vue.js but I'm always looking to try new technologies.",
       entries: [
         {
-          title: "mai 2021 à aujourd'hui",
+          title: "May 2021 - Today",
           jobs: [
             {
               jobTitle: 'Front-End Developer - Coveo',
               link: 'https://www.coveo.com/',
               jobDesc:
-                'SCSS - JS - Vue - GTM - Figma - Typescript - Sitecore - Performance - Design',
+                'SCSS - JS - Vue - GTM - Figma - Cypress - Sitecore - Gulp - Performance - Design',
             },
           ],
         },
@@ -64,18 +64,18 @@ export default {
               jobTitle: 'Webmaster - CRISM',
               link: 'https://www.crismquebecatlantic.ca/',
               jobDesc:
-                'Intégration Wordpress - Design - SEO- Rédaction - Gestion de contenu',
+                'Wordpress - Design - SEO - Copy Writing - Content Integration',
             },
 
             {
               jobTitle: 'The Modern Javascript Bootcamp',
               link: 'https://www.udemy.com/course/javascript-beginners-complete-tutorial/',
-              jobDesc: 'En cours',
+              jobDesc: 'Ongoing',
             },
             {
               jobTitle: 'The Web Developer Bootcamp 2020 Certification',
               link: 'https://www.udemy.com/course/the-web-developer-bootcamp/',
-              jobDesc: 'Complété',
+              jobDesc: 'Completed',
             },
           ],
         },
@@ -83,7 +83,7 @@ export default {
           title: '2019',
           jobs: [
             {
-              jobTitle: 'DESS en Gestion - ESG',
+              jobTitle: 'Management DESS - ESG',
             },
           ],
         },
@@ -91,18 +91,10 @@ export default {
           title: '2018-2019',
           jobs: [
             {
-              jobTitle: ' Agente au marketing - Druide informatique',
+              jobTitle: 'Marketing Agent- Druide informatique',
               link: 'www.druide.com',
               jobDesc:
-                'SEO - Marketing numérique - Intégration Web - Gestion des commandites - Rédaction',
-            },
-          ],
-        },
-        {
-          title: '2016',
-          jobs: [
-            {
-              jobTitle: 'Maîtrise études hispaniques',
+                'SEO - Marketing - Web integration - Partnerships - Copy Writing',
             },
           ],
         },

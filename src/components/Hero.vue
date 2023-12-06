@@ -14,8 +14,7 @@
           Moi, c'est <span class="nom">Marie-Ève</span>.
         </h1>
         <p class="description">
-          Je suis une développeuse front-end québécoise basée à Madrid et qui a
-          plus d’un tour dans son sac!
+          I'm a French Canadian Frontend developer based in Madrid. I'm passionate about pixel-perfect beautiful interfaces and I love to add a magic touch to the internet. 
         </p>
       </div>
     </section>

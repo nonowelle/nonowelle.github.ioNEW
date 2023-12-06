@@ -2,8 +2,7 @@
   <section class="contact show-on-scroll-left" id="contact">
     <h2 class="title-contact">Contact</h2>
     <p>
-      Je ne suis présentement pas à la recherche de nouvelles opportunités, mais
-      n'hésitez pas à m'écrire pour toute question!
+       Don't hesitate to reach out for any question!
     </p>
     <a class="contact-link" href="mailto:menoel888@gmail.com">
       menoel888@gmail.com</a

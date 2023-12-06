@@ -1,6 +1,6 @@
 <template>
   <section class="skills" id="skills">
-    <h2 class="comp show-on-scroll-left">{{ title.fr }}</h2>
+    <h2 class="comp show-on-scroll-left">{{ title.en }}</h2>
     <div class="container">
       <div class="show-on-scroll-right">
         <ul class="grid">
@@ -39,25 +39,19 @@ export default {
           src: 'imgs/node-js.png',
         },
         {
-          src: 'imgs/express.png',
-        },
-        {
-          src: 'imgs/MongoDB_Logo_FullColorBlack_RGB.png',
-        },
-        {
-          src: 'imgs/sketch-symbol-transparent@2x.png',
-        },
-        {
           src: 'imgs/figma-1-logo-png-transparent.png',
-        },
-        {
-          src: 'imgs/analytics.png',
         },
         {
           src: 'imgs/tag-manager.png',
         },
         {
           src: 'imgs/sitecore.png',
+        },
+        {
+          src: 'imgs/cypress.svg',
+        },
+        {
+          src: 'imgs/gulp.svg',
         },
       ],
     };

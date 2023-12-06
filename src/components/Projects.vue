@@ -1,6 +1,6 @@
 <template>
   <section class="projets" id="projets">
-    <h2 class="show-on-scroll-left">Mes projets</h2>
+    <h2 class="show-on-scroll-left">My Projects</h2>
     <li v-for="(project, index) in projects" :key="project.id">
       <div
         class="project-details"
@@ -14,7 +14,7 @@
           <h3>{{ project.title }}</h3>
           <p class="project-description">{{ project.description }}</p>
           <div>
-            <p>Technologies utilisées :</p>
+            <p>Technologies:</p>
             <div class="tech">
               <li v-for="tech in project.techs" :key="tech.id" class="techs">
                 {{ tech.name }}
@@ -24,7 +24,7 @@
 
           <div class="btn">
             <a target="_blank" :href="project.links[0]" class="site"
-              >Site Web <i class="fas fa-long-arrow-alt-right lien"></i
+              >Web Site <i class="fas fa-long-arrow-alt-right lien"></i
             ></a>
           </div>
           <div v-if="project.links[1]" class="btn">

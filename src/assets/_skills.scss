@@ -1,6 +1,7 @@
 .skills {
   padding: 10rem 8rem;
-  background-color: $black;
+  background-color: $dark-blue;
+  border-top-left-radius: 200px;
 
   @media (max-width: 767px) {
     padding: 5rem 4rem;

@@ -20,7 +20,7 @@ li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5.5rem;
   color: $texte-clair;
   grid-column: 1/1;
   grid-row: 1/1;
@@ -168,6 +168,9 @@ p {
 @media (max-width: 1023px) {
   html {
     font-size: 14px;
+  }
+  h1 {
+    font-size: 4rem;
   }
 }
 //---- OVERRIDE ALL OF THE HOVER RULES ------------//

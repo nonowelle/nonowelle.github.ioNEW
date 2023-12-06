@@ -17,6 +17,7 @@
                 'show-on-scroll-right': index % 2 !== 0,
               }"
               class="entry"
+              ref="entry"
             >
               <p class="title">{{ entry.title }}</p>
               <div class="desc">
@@ -100,6 +101,7 @@ export default {
         },
       ],
     };
-  },
-};
+  }
+    
+}
 </script>

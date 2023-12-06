@@ -10,8 +10,8 @@
       </div>
       <div class="texte show-on-scroll-left">
         <h1>
-          Bonjour! <br />
-          Moi, c'est <span class="nom">Marie-Ève</span>.
+          Hello! <br />
+          I'm <span class="nom">Marie-Ève</span>.
         </h1>
         <p class="description">
           I'm a French Canadian Frontend developer based in Madrid. I'm passionate about pixel-perfect beautiful interfaces and I love to add a magic touch to the internet. 

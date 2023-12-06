@@ -1,5 +1,6 @@
 <template>
   <div class="apropos" id="apropos">
+    <div class="wrapper">
     <h2 class="titre-apropos show-on-scroll-left">{{ title }}</h2>
     <p class="para show-on-scroll-left">
       {{ texte }}
@@ -36,6 +37,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>

@@ -1,6 +1,7 @@
 <template>
   <header class="header">
-    <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
+    <div class="wrapper">
+      <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
       <span></span>
       <span></span>
       <span></span>
@@ -27,6 +28,7 @@
         <li class="navli email">Contactez-moi : menoel888@gmail.com</li>
       </ul>
     </nav>
+    </div>
   </header>
 </template>
 

@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 html {
   width: 100%;
@@ -171,6 +175,9 @@ p {
   }
   h1 {
     font-size: 4rem;
+  }
+  .wrapper {
+    margin: 0 32px;
   }
 }
 //---- OVERRIDE ALL OF THE HOVER RULES ------------//

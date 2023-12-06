@@ -1,14 +1,16 @@
 <template>
   <section class="skills" id="skills">
-    <h2 class="comp show-on-scroll-left">{{ title.en }}</h2>
-    <div class="container">
-      <div class="show-on-scroll-right">
-        <ul class="grid">
-          <li v-for="link in links" :key="link.src" class="logo">
-            <img :src="link.src" alt="" />
-          </li>
-        </ul>
-      </div>
+    <div class="wrapper">
+      <h2 class="comp show-on-scroll-left">{{ title.en }}</h2>
+    
+        <div class="show-on-scroll-right">
+          <ul class="grid">
+            <li v-for="link in links" :key="link.src" class="logo">
+              <img :src="link.src" alt="" />
+            </li>
+          </ul>
+        </div>
+
     </div>
   </section>
 </template>

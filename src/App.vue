@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+      
     <Header />
     <Hero />
     <Apropos />
     <Skills />
     <Projects />
     <Contact />
+   
   </div>
 </template>
 

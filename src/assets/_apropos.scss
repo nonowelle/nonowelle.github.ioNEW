@@ -1,5 +1,5 @@
 .apropos {
-  padding: 8rem 8rem 2rem 8rem;
+  padding: 8rem 0;
   background-color: white;
 
   .para {
@@ -52,11 +52,7 @@
 }
 
 .entry {
-  // width: calc(50% - 4rem);
-  // float: left;
  
-  // padding: 2rem;
-  // clear: both;
   text-align: right;
   -webkit-box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
   -moz-box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);

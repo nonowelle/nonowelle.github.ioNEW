@@ -1,40 +1,42 @@
 <template>
-  <section class="projets" id="projets">
-    <h2 class="show-on-scroll-left">My Projects</h2>
-    <li v-for="(project, index) in projects" :key="project.id">
-      <div
-        class="project-details"
-        :class="{
-          'show-on-scroll-left': index % 2 === 0,
-          'show-on-scroll-right': index % 2 !== 0,
-        }"
-      >
-        <img :src="project.img" alt="" />
-        <div class="project-text">
-          <h3>{{ project.title }}</h3>
-          <p class="project-description">{{ project.description }}</p>
-          <div>
-            <p>Technologies:</p>
-            <div class="tech">
-              <li v-for="tech in project.techs" :key="tech.id" class="techs">
-                {{ tech.name }}
-              </li>
+  <section id="projets">
+    <div class="wrapper projets">
+      <h2 class="show-on-scroll-left">My Projects</h2>
+      <li v-for="(project, index) in projects" :key="project.id">
+        <div
+          class="project-details"
+          :class="{
+            'show-on-scroll-left': index % 2 === 0,
+            'show-on-scroll-right': index % 2 !== 0,
+          }"
+        >
+          <img :src="project.img" alt="" />
+          <div class="project-text">
+            <h3>{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            <div>
+              <p>Technologies:</p>
+              <div class="tech">
+                <li v-for="tech in project.techs" :key="tech.id" class="techs">
+                  {{ tech.name }}
+                </li>
+              </div>
+            </div>
+
+            <div class="btn">
+              <a target="_blank" :href="project.links[0]" class="site"
+                >Web Site <i class="fas fa-long-arrow-alt-right lien"></i
+              ></a>
+            </div>
+            <div v-if="project.links[1]" class="btn">
+              <a target="_blank" :href="project.links[1]" class="site"
+                >Code <i class="fas fa-long-arrow-alt-right lien"></i
+              ></a>
             </div>
           </div>
-
-          <div class="btn">
-            <a target="_blank" :href="project.links[0]" class="site"
-              >Web Site <i class="fas fa-long-arrow-alt-right lien"></i
-            ></a>
-          </div>
-          <div v-if="project.links[1]" class="btn">
-            <a target="_blank" :href="project.links[1]" class="site"
-              >Code <i class="fas fa-long-arrow-alt-right lien"></i
-            ></a>
-          </div>
         </div>
-      </div>
-    </li>
+      </li>
+    </div>
   </section>
 </template>
 
@@ -92,6 +94,24 @@ export default {
           links: [
             'https://faq-accordion-card-challenge-git-main.nonowelle.vercel.app/',
             'https://github.com/nonowelle/faq-accordion-card-challenge',
+          ],
+        },
+        {
+          id: 4,
+          title: 'Wedding Site',
+          description:
+            "I built this webpage to make an online RSVP system for my friends wedding. Every guest answer was saved in a restdb database.",
+          img: '/imgs/charlie-benoit.png',
+          techs: [
+            { name: 'HTML', id: 1 },
+            { name: 'CSS', id: 2 },
+            { name: 'Vue Js', id: 3 },
+            { name: 'Node', id: 4 },
+            { name: 'restDb', id: 5 },
+          ],
+          links: [
+            'https://charlie-benoit-wedding-fe.onrender.com/',
+            'https://github.com/nonowelle/charlie-benoit',
           ],
         },
       ],

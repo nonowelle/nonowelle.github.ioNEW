@@ -1,10 +1,10 @@
 .hero {
-  background-color: $black;
+  background-color: $dark-blue;
   margin: 0 auto;
 }
 .accueil {
   padding: 10rem 2rem;
-  max-width: 1000px;
+  max-width: 1300px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 }
 
 .nom {
-  color: $jaune;
+  color: $aquamarine;
   padding-top: 0;
 }
 

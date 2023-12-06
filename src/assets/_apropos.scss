@@ -1,6 +1,7 @@
 .apropos {
   padding: 8rem 8rem 2rem 8rem;
-  background-color: $gris;
+  background-color: white;
+
   .para {
     padding-top: 2rem;
     color: $black;
@@ -32,6 +33,10 @@
 }
 
 .entries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   min-height: 100%;
 
   &::before {
@@ -47,17 +52,37 @@
 }
 
 .entry {
-  width: calc(50% - 4rem);
-  float: left;
-  padding: 2rem;
-  clear: both;
+  // width: calc(50% - 4rem);
+  // float: left;
+ 
+  // padding: 2rem;
+  // clear: both;
   text-align: right;
-  &:not(:first-child) {
-    margin-top: -4rem;
+  -webkit-box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
+  -moz-box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
+  box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
+  margin: -50px;
+
+
+  padding: 50px; 
+  border-radius: 16px;
+  background-color: $dark-blue;
+  color: white;
+
+  &:nth-child(1n) {
+    transform: translate(-63%, -30%);
   }
+  
+  &:first-of-type {
+    margin: 0;
+    transform: translate(-63%, 0);
+  }
+
   &:nth-child(2n) {
     text-align: left;
-    float: right;
+    // float: right;
+    transform: translate(63%, 0);
+
     .title {
       &:before {
         left: -6.5rem;
@@ -71,14 +96,14 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   position: relative;
-  color: $black;
+  color: white;
   &:before {
     content: '';
     position: absolute;
     width: 0.5rem;
     height: 0.5rem;
-    border: 0.25rem solid $jaune;
-    background-color: $black;
+    border: 4px solid $dark-blue;
+    background-color: $aquamarine;
     border-radius: 100%;
     top: 50%;
     transform: translateY(-50%);
@@ -88,12 +113,12 @@
 }
 
 .job-title {
-  color: $black;
+  color: white;
   font-size: 1rem;
 }
 
 .job-desc {
-  color: $mauve-pale;
+  color: $aquamarine;
   font-size: 0.8rem;
   margin-bottom: 1.5rem;
   margin-top: 5px;
@@ -108,7 +133,7 @@
     color: $black;
   }
   &:hover {
-    color: $jaune;
+    color: $aquamarine;
   }
 }
 

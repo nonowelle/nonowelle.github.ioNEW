@@ -44,8 +44,23 @@ export default {
   data: function () {
     return {
       projects: [
-        {
+      {
           id: 1,
+          title: 'Coveo',
+          description:
+            "I've been part of the Web team at Coveo for almost three years now. I work on a daily basis with Vue js and Sitecore to create responsive and beautiful components. I also make sure Coveo's corporate website is performant and up to the highest standards. My team and I work with Gulp, Cypress, esbuilt, Sass and Figma.",
+          img: '',
+          techs: [
+            { name: 'Sitecore', id: 1 },
+            { name: 'Vue.js', id: 2 },
+            { name: 'Sass', id: 3 },
+            { name: 'Cypress', id: 4 },
+            { name: 'Figma', id: 5 },
+          ],
+          links: ['https://www.coveo.com/'],
+        },
+        {
+          id: 2,
           title: 'Planties',
           description:
             "Planties est ma première application Web complète. Créez-vous un compte et vous pourrez collectionner et partager des photos de vos plantes avec d'autres passionnés. Elle est inspirée du projet Yelpcamp du cours The Web Developper Bootcamp (par Colt Steele). Grâce à ce projet, j'ai appris à utiliser Express, Node.js et MongoDB.",
@@ -62,21 +77,7 @@ export default {
             'https://github.com/nonowelle/planties',
           ],
         },
-        {
-          id: 2,
-          title: 'CRISM',
-          description:
-            "À titre d'édimestre pour l'Initiative canadienne de recherche en abus de substances (CRISM), j'avais pour mandat de procéder à la refonte du visuel et du contenu du site Web de l'organisation. Je devais utiliser le thème Wordpress mis en place lors de la création du site, Jupiter 6. J'ai donc créé une nouvelle arborescence, établi une nouvelle palette de couleurs et créé des maquettes avec Figma pour finalement mettre en place le nouveau design. J'ai également procédé à l'ajout de métadecriptions via le plugin Yoast pour améliorer le référencement naturel.",
-          img: 'imgs/CRISM.png',
-          techs: [
-            { name: 'Wordpress', id: 1 },
-            { name: 'Thème Jupiter 6', id: 2 },
-            { name: 'CSS', id: 3 },
-            { name: 'YoastSEO', id: 4 },
-            { name: 'Figma', id: 5 },
-          ],
-          links: ['https://www.crismquebecatlantic.ca/'],
-        },
+       
         {
           id: 3,
           title: 'Page FAQ',

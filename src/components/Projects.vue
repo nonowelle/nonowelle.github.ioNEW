@@ -1,7 +1,7 @@
 <template>
 	<section id="projets">
 		<div class="wrapper projets">
-			<h2 class="show-on-scroll-left">My Projects</h2>
+			<h2 class="">My Projects</h2>
 			<div
 				class="glide"
 				ref="glide"
@@ -13,11 +13,7 @@
 					<ul class="glide__slides">
 						<li
 							class="glide__slide project-details"
-							:class="{
-								'show-on-scroll-left': index % 2 === 0,
-								'show-on-scroll-right': index % 2 !== 0,
-							}"
-							v-for="(project, index) in projects"
+							v-for="project in projects"
 							:key="project.id"
 						>
 							<div class="project-image">
@@ -40,6 +36,31 @@
 										>
 											{{ tech.name }}
 										</li>
+										<div class="btn">
+											<a
+												target="_blank"
+												:href="project.links[0]"
+												class="site"
+												>Site Web
+												<i
+													class="fas fa-long-arrow-alt-right lien"
+												></i
+											></a>
+										</div>
+										<div
+											v-if="project.links[1]"
+											class="btn"
+										>
+											<a
+												target="_blank"
+												:href="project.links[1]"
+												class="site"
+												>Code
+												<i
+													class="fas fa-long-arrow-alt-right lien"
+												></i
+											></a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -143,13 +164,15 @@
 				type: 'carousel',
 				startAt: 1,
 				focusAt: 'center',
-				peek: {
-					before: 100,
-					after: 100,
-				},
+
 				perView: 2.5,
 				bound: true,
 				gap: 50,
+				breakpoints: {
+					1024: {
+						perView: 1.2,
+					},
+				},
 			}).mount();
 		},
 	};

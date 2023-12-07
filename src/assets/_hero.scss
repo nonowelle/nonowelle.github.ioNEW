@@ -1,7 +1,18 @@
+@keyframes border {
+   from {
+     width: 0px;
+   }
+
+   to {
+     width: 100%
+   }
+ }
+
 .hero {
   background-color: $dark-blue;
   margin: 0 auto;
 }
+
 .accueil {
   padding: 10rem 0;
   max-width: 1300px;
@@ -19,14 +30,35 @@
 .nom {
   padding-top: 0;
 
-    background: linear-gradient(90deg, rgba(100, 247, 217, 1) 0%, rgba(100, 247, 217, 1) 26%, rgba(175, 162, 255, 1) 72%);    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
+  background: linear-gradient(90deg, rgba(100, 247, 217, 1) 0%, rgba(100, 247, 217, 1) 26%, rgba(175, 162, 255, 1) 72%);    /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  display: inline-block;
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 5px;
+      width: 0px;
+      background: linear-gradient(90deg, rgba(100, 247, 217, 1) 0%, rgba(100, 247, 217, 1) 26%, rgba(175, 162, 255, 1) 72%);
+      position: absolute;
+      top: 100%;
+
+      animation-name: border;
+      animation-duration: 2.5s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      border-radius: 40px;
+
+    }
 }
 
 // ---------------MEDIA-QUERIES -------------------//@at-root

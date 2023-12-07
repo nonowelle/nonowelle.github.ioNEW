@@ -20,12 +20,13 @@
 							v-for="(project, index) in projects"
 							:key="project.id"
 						>
-							<img
-								:src="project.img"
-								alt=""
-							/>
+							<div class="project-image">
+								<img
+									:src="project.img"
+									alt=""
+								/>
+							</div>
 							<div class="project-text">
-								<h3>{{ project.title }}</h3>
 								<p class="project-description">
 									{{ project.description }}
 								</p>
@@ -85,8 +86,8 @@
 						id: 1,
 						title: 'Coveo',
 						description:
-							"I've been part of the Web team at Coveo for almost three years now. I work on a daily basis with Vue js and Sitecore to create responsive and beautiful components. I also make sure Coveo's corporate website is performant and up to the highest standards. My team and I work with Gulp, Cypress, esbuilt, Sass and Figma.",
-						img: '',
+							"I've been part of the Web team at Coveo for almost three years now. I work on a daily basis with Vue js and Sitecore to create responsive and beautiful components. I also make sure Coveo's corporate website is performant and up to the highest standards.",
+						img: 'imgs/coveo.png',
 						techs: [
 							{ name: 'Sitecore', id: 1 },
 							{ name: 'Vue.js', id: 2 },
@@ -100,8 +101,8 @@
 						id: 2,
 						title: 'Planties',
 						description:
-							"Planties est ma première application Web complète. Créez-vous un compte et vous pourrez collectionner et partager des photos de vos plantes avec d'autres passionnés. Elle est inspirée du projet Yelpcamp du cours The Web Developper Bootcamp (par Colt Steele). Grâce à ce projet, j'ai appris à utiliser Express, Node.js et MongoDB.",
-						img: '',
+							"Planties is a complete web app. After signing up, you can collect and share pictures of all your plants with the planties community. You can even comment on your friend's plant and keep track of their growth.",
+						img: 'imgs/planties-2.1.png',
 						techs: [
 							{ name: 'Bootstrap', id: 1 },
 							{ id: 2, name: 'Express' },
@@ -116,27 +117,11 @@
 					},
 
 					{
-						id: 3,
-						title: 'Page FAQ',
-						description:
-							"Ce projet constitue mon troisième défi de Front-End Mentor Challenge. Il s'agit d'une section Questions fréquentes sous forme d'accordéon. Je devais reproduire le plus fidèlement possible le design qui m'avait été fourni en utilisant les outils de mon choix. Mon design devait être responsive et s'adapter à tous les navigateurs.",
-						img: '',
-						techs: [
-							{ name: 'HTML', id: 1 },
-							{ name: 'CSS', id: 2 },
-							{ name: 'Vanilla JS', id: 3 },
-						],
-						links: [
-							'https://faq-accordion-card-challenge-git-main.nonowelle.vercel.app/',
-							'https://github.com/nonowelle/faq-accordion-card-challenge',
-						],
-					},
-					{
 						id: 4,
 						title: 'Wedding Site',
 						description:
 							'I built this webpage to make an online RSVP system for my friends wedding. Every guest answer was saved in a restdb database.',
-						img: '/imgs/charlie-benoit.png',
+						img: '/imgs/charlie-benoit-2.png',
 						techs: [
 							{ name: 'HTML', id: 1 },
 							{ name: 'CSS', id: 2 },
@@ -162,7 +147,7 @@
 					before: 100,
 					after: 100,
 				},
-				perView: 1.5,
+				perView: 2.5,
 				bound: true,
 				gap: 50,
 			}).mount();

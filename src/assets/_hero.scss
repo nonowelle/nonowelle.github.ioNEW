@@ -17,8 +17,16 @@
 }
 
 .nom {
-  color: $aquamarine;
   padding-top: 0;
+
+    background: linear-gradient(90deg, rgba(100, 247, 217, 1) 0%, rgba(100, 247, 217, 1) 26%, rgba(175, 162, 255, 1) 72%);    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 // ---------------MEDIA-QUERIES -------------------//@at-root

@@ -29,7 +29,7 @@
 								<p class="project-description">
 									{{ project.description }}
 								</p>
-								<div>
+								<div class="title-tech">
 									<p>Technologies:</p>
 									<div class="tech">
 										<li
@@ -159,9 +159,10 @@
 				startAt: 1,
 				focusAt: 'center',
 				peek: {
-					before: 50,
-					after: 50,
+					before: 100,
+					after: 100,
 				},
+				perView: 1.5,
 				bound: true,
 				gap: 50,
 			}).mount();

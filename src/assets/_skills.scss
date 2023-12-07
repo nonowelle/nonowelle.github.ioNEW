@@ -39,10 +39,7 @@
     position: relative;
     border-radius: 0.3rem;
     transition: all 0.2s ease-in;
-    filter: grayscale(80%);
-    @media (max-width: 767px) {
-      filter: grayscale(0%);
-    }
+
 
     img {
       height: 3rem;

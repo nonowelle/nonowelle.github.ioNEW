@@ -14,23 +14,7 @@
 .titre-apropos {
   text-align: center;
 }
-.parcours {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 3rem;
-  display: grid;
-  position: relative;
-}
 
-.etudes {
-  grid-row: 1;
-  grid-column: 1;
-  min-height: 33rem;
-  min-width: 20rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  border-radius: 0.5rem;
-}
 
 .entries {
   display: flex;
@@ -38,13 +22,15 @@
   align-items: center;
 
   min-height: 100%;
+  position: relative;
+  padding: 60px 0 0 0;
 
   &::before {
     content: '';
     position: absolute;
-    top: 3rem;
+    top: 50px;
     left: 50%;
-    bottom: 4rem;
+    height: 100%;
     transform: translateX(-50%);
     width: 3px;
     background-color: $black;
@@ -57,27 +43,19 @@
   -webkit-box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
   -moz-box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
   box-shadow: 10px 12px 36px -9px rgba(173,173,173,1);
-  margin: -50px;
 
 
   padding: 50px; 
   border-radius: 16px;
   background-color: $dark-blue;
   color: white;
+  width: 500px;
 
-  &:nth-child(1n) {
-    transform: translate(-63%, -30%);
-  }
-  
-  &:first-of-type {
-    margin: 0;
-    transform: translate(-63%, 0);
-  }
+  transform: translate(-70%, 0);
 
   &:nth-child(2n) {
     text-align: left;
-    // float: right;
-    transform: translate(63%, 0);
+    transform: translate(70%, 0);
 
     .title {
       &:before {
@@ -144,19 +122,36 @@
 
 // ----------------- MEDIA - QUERIES ----------- //
 
+@media (max-width: 1024px) {
+  .entry {
+    width: 100%;
+    transform: none;
+    margin: 10px 0;
+    width: 100%;
+    max-width: none;
+    text-align: left;
+
+    &:nth-child(2n){
+      transform: none;
+      margin: 10px 0;
+      text-align: left;
+    }
+  }
+  .entries {
+      &::before {
+        display: none;
+      }
+  }
+  .title {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .apropos {
-    padding: 5rem 4rem;
-  }
-
-  .title {
-    font-size: 1rem;
-    margin-bottom: 0.6rem;
-    position: relative;
-    color: $black;
-  }
-
-  .parcours {
-    display: none;
+    padding: 5rem 0;
   }
 }

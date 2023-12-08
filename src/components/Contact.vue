@@ -4,15 +4,36 @@
 		id="contact"
 	>
 		<div class="wrapper">
-			<h2 class="title-contact">Contact</h2>
-			<p>Don't hesitate to reach out for any question!</p>
+			<h2
+				class="title-contact"
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
+				Contact
+			</h2>
+			<p
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
+				Don't hesitate to reach out for any question!
+			</p>
 			<a
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
 				class="contact-link"
 				href="mailto:menoel888@gmail.com"
 			>
 				menoel888@gmail.com</a
 			>
-			<div class="res">
+			<div
+				class="res"
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
 				<a
 					target=" _blank"
 					href=" mailto:menoel888@gmail.com"
@@ -31,6 +52,9 @@
 				></a>
 			</div>
 			<p
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
 				id="copyright"
 				class=""
 			>

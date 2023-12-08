@@ -25,16 +25,6 @@
 					</p>
 				</div>
 			</section>
-			<a
-				class="rond-fleche"
-				v-smooth-scroll
-				href="#apropos"
-			>
-				<i
-					class="fas fa-arrow-down fleche"
-					ref="fleche"
-				></i>
-			</a>
 		</div>
 	</div>
 </template>

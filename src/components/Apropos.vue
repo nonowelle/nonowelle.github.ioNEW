@@ -4,44 +4,53 @@
 		id="apropos"
 	>
 		<div class="wrapper">
-			<h2 class="titre-apropos">{{ title }}</h2>
-			<p class="para">
+			<h2
+				class="titre-apropos"
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
+				{{ title }}
+			</h2>
+			<p
+				class="para"
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
 				{{ texte }}
 			</p>
 
-			<div class="parcours">
-				<div class="etudes">
-					<div class="entries">
+			<ul class="entries">
+				<li
+					v-for="entry in entries"
+					:key="entry.title"
+					class="entry"
+					ref="entry"
+					data-sal="fade-in"
+					data-sal-delay="200"
+					data-sal-duration="800"
+				>
+					<p class="title">{{ entry.title }}</p>
+					<div class="desc">
 						<ul>
 							<li
-								v-for="entry in entries"
-								:key="entry.title"
-								class="entry"
-								ref="entry"
+								v-for="job in entry.jobs"
+								:key="job.jobTitle"
 							>
-								<p class="title">{{ entry.title }}</p>
 								<div class="desc">
-									<ul>
-										<li
-											v-for="job in entry.jobs"
-											:key="job.jobTitle"
-										>
-											<div class="desc">
-												<p class="job-title">
-													{{ job.jobTitle }}
-												</p>
-												<p class="job-desc">
-													{{ job.jobDesc }}
-												</p>
-											</div>
-										</li>
-									</ul>
+									<p class="job-title">
+										{{ job.jobTitle }}
+									</p>
+									<p class="job-desc">
+										{{ job.jobDesc }}
+									</p>
 								</div>
 							</li>
 						</ul>
 					</div>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>

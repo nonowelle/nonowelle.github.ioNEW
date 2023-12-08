@@ -16,7 +16,7 @@
 	import Skills from './components/Skills.vue';
 	import Projects from './components/Projects.vue';
 	import Contact from './components/Contact.vue';
-
+	import sal from 'sal.js';
 	export default {
 		name: 'App',
 		components: {
@@ -26,6 +26,11 @@
 			Skills,
 			Projects,
 			Contact,
+		},
+		mounted() {
+			sal({
+				threshold: 0.1,
+			});
 		},
 	};
 </script>

@@ -1,7 +1,14 @@
 <template>
 	<section id="projets">
 		<div class="wrapper projets">
-			<h2 class="">My Projects</h2>
+			<h2
+				class=""
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
+				My Projects
+			</h2>
 			<div
 				class="glide"
 				ref="glide"
@@ -9,6 +16,9 @@
 				<div
 					class="glide__track"
 					data-glide-el="track"
+					data-sal="slide-up"
+					data-sal-delay="200"
+					data-sal-duration="800"
 				>
 					<ul class="glide__slides">
 						<li

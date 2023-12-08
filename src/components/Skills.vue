@@ -4,10 +4,22 @@
 		id="skills"
 	>
 		<div class="wrapper">
-			<h2 class="comp">{{ title.en }}</h2>
+			<h2
+				class="comp"
+				data-sal="slide-up"
+				data-sal-delay="200"
+				data-sal-duration="800"
+			>
+				{{ title.en }}
+			</h2>
 
 			<div class="">
-				<ul class="grid">
+				<ul
+					class="grid"
+					data-sal="slide-up"
+					data-sal-delay="200"
+					data-sal-duration="800"
+				>
 					<li
 						v-for="link in links"
 						:key="link.src"
@@ -25,6 +37,7 @@
 </template>
 
 <script>
+	import sal from 'sal.js';
 	export default {
 		name: 'Skills',
 		data() {
@@ -66,6 +79,9 @@
 					},
 				],
 			};
+		},
+		mounted() {
+			sal();
 		},
 	};
 </script>

@@ -2,6 +2,8 @@
 .triangles {
   width: 20%;
   display: flex;
+  position: relative;
+  top: 100px;
 }
 
 .un {
@@ -14,6 +16,7 @@
   border-bottom: 4rem solid $rose;
 
   animation: enlarge 10s infinite;
+  
 }
 
 .deux {
@@ -38,7 +41,7 @@
   @include triangles;
   border-left: 1.5rem $border-triangle;
   border-right: 1.5rem $border-triangle;
-  border-bottom: 3rem solid $jaune;
+  border-bottom: 3rem solid $mauve-pale;
   animation: enlargeThree 15s infinite;
 }
 
@@ -153,8 +156,8 @@
   position: relative;
   z-index: 1;
   margin: -2.5rem auto;
-  background: $black;
-  border: 3px solid $jaune;
+  background: $dark-blue;
+  border: 3px solid $aquamarine;
   width: 5rem;
   height: 5rem;
   padding: 4em 2em;
@@ -170,7 +173,7 @@
 }
 
 .fleche {
-  color: $jaune;
+  color: $aquamarine;
   font-size: 2rem;
   position: absolute;
   top: 50%;
@@ -209,7 +212,7 @@
   //--------------------BOUTON SCROLL-----------------------
 
   .rond-fleche {
-    border: 2px solid $jaune;
+    border: 2px solid $aquamarine;
     width: 4rem;
     height: 4rem;
     padding: 4em 2em;

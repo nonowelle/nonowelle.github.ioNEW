@@ -1,6 +1,7 @@
 <template>
   <header class="header">
-    <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
+    <div class="wrapper">
+      <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
       <span></span>
       <span></span>
       <span></span>
@@ -9,12 +10,12 @@
       <ul class="menu">
         <li class="navli" @click="openMobileNav">
           <a class="nav" id="liapropos" v-smooth-scroll href="#apropos"
-            >À propos</a
+            >About</a
           >
         </li>
         <li class="navli" @click="openMobileNav">
           <a class="nav" id="liprojets" v-smooth-scroll href="#projets"
-            >Projets</a
+            >Projects</a
           >
         </li>
         <li class="navli" @click="openMobileNav">
@@ -27,6 +28,7 @@
         <li class="navli email">Contactez-moi : menoel888@gmail.com</li>
       </ul>
     </nav>
+    </div>
   </header>
 </template>
 

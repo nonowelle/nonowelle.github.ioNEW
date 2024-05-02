@@ -2,6 +2,7 @@
   background-color: $black;
   padding: 6rem 8rem;
   text-align: center;
+  border-top-right-radius: 200px;
 
   p {
     color: $gris;
@@ -14,9 +15,10 @@
 
 .contact-link {
   color: $gris;
+  transition: all ease 200ms;
 
   &:hover {
-    color: $jaune;
+    color: $aquamarine;
     cursor: pointer;
   }
 }
@@ -29,7 +31,7 @@
     transition: color 0.3s;
 
     &:hover {
-      color: $jaune;
+      color: $aquamarine;
     }
   }
 }

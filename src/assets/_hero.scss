@@ -1,74 +1,103 @@
 @keyframes border {
-   from {
-     width: 0px;
-   }
+	from {
+		width: 0px;
+	}
 
-   to {
-     width: 100%
-   }
- }
+	to {
+		width: 100%;
+	}
+}
+
+:root {
+	--scroll: 0;
+}
 
 .hero {
-  background-color: $dark-blue;
-  margin: 0 auto;
+	background: linear-gradient(
+		180deg,
+		rgba(12, 10, 62, 1) 49%,
+		rgb(242, 244, 243) 100%
+	);
+	// opacity: var(--background-opacity);
+	margin: 0 auto;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	transform: translate(
+		0,
+		calc(-1% * (max(var(--scroll), 35) - 35) * 100 / 65)
+	);
+
+	// --background-opacity: calc(
+	// 	100% - 1% * (min(var(--scroll)) - 40) * 100 / 40
+	// );
 }
 
 .accueil {
-  padding: 10rem 0;
-  max-width: 1300px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin: 0 auto;
+	padding: 25% 0;
+	max-width: 1300px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0 auto;
 }
 
 .texte {
-  width: 55%;
-  z-index: 1;
+	width: 60%;
+	z-index: 1;
 }
 
 .nom {
-  padding-top: 0;
+	padding-top: 0;
 
-  background: linear-gradient(90deg, rgba(100, 247, 217, 1) 0%, rgba(100, 247, 217, 1) 26%, rgba(175, 162, 255, 1) 72%);    /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-  display: inline-block;
+	background: linear-gradient(
+		90deg,
+		rgba(100, 247, 217, 1) 0%,
+		rgba(100, 247, 217, 1) 26%,
+		rgba(175, 162, 255, 1) 72%
+	);
+	background-size: 100%;
+	background-repeat: repeat;
+	display: inline-block;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  position: relative;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	position: relative;
 
-    &::before {
-      content: '';
-      display: block;
-      margin: auto;
-      height: 5px;
-      width: 0px;
-      background: linear-gradient(90deg, rgba(100, 247, 217, 1) 0%, rgba(100, 247, 217, 1) 26%, rgba(175, 162, 255, 1) 72%);
-      position: absolute;
-      top: 100%;
+	&::before {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 5px;
+		width: 0px;
+		background: linear-gradient(
+			90deg,
+			rgba(100, 247, 217, 1) 0%,
+			rgba(100, 247, 217, 1) 26%,
+			rgba(175, 162, 255, 1) 72%
+		);
+		position: absolute;
+		top: 100%;
 
-      animation-name: border;
-      animation-duration: 2.5s;
-      animation-delay: 1s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
-      border-radius: 40px;
-
-    }
+		animation-name: border;
+		animation-duration: 2.5s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-out;
+		border-radius: 40px;
+	}
 }
 
 // ---------------MEDIA-QUERIES -------------------//@at-root
 @media (max-width: 767px) {
-  .accueil {
-    padding: 7rem 0;
-    flex-direction: column;
-    min-height: 400px;
-  }
-  .texte {
-    width: 100%;
-  }
+	.accueil {
+		padding: 27vh 0;
+		flex-direction: column;
+		min-height: 400px;
+	}
+	.texte {
+		width: 100%;
+	}
 }

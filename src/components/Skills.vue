@@ -1,36 +1,35 @@
 <template>
-	<section
-		class="skills"
-		id="skills"
-	>
-		<div class="wrapper">
-			<h2
-				class="comp"
-				data-sal="slide-up"
-				data-sal-delay="200"
-				data-sal-duration="800"
-			>
-				{{ title.en }}
-			</h2>
-
-			<div class="">
-				<ul
-					class="grid"
+	<section id="skills">
+		<div class="skills">
+			<div class="wrapper">
+				<h2
+					class="comp"
 					data-sal="slide-up"
 					data-sal-delay="200"
 					data-sal-duration="800"
 				>
-					<li
-						v-for="link in links"
-						:key="link.src"
-						class="logo"
+					{{ title.en }}
+				</h2>
+
+				<div class="">
+					<ul
+						class="grid"
+						data-sal="slide-up"
+						data-sal-delay="200"
+						data-sal-duration="800"
 					>
-						<img
-							:src="link.src"
-							alt=""
-						/>
-					</li>
-				</ul>
+						<li
+							v-for="link in links"
+							:key="link.src"
+							class="logo"
+						>
+							<img
+								:src="link.src"
+								alt=""
+							/>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>

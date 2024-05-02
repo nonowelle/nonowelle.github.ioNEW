@@ -3,6 +3,7 @@
   width: 20%;
   display: flex;
   position: relative;
+  top: 100px;
 }
 
 .un {
@@ -15,6 +16,7 @@
   border-bottom: 4rem solid $rose;
 
   animation: enlarge 10s infinite;
+  
 }
 
 .deux {

@@ -2,7 +2,9 @@
 	<div
 		class="hero"
 		id="#hero"
+		ref="hero"
 	>
+		<Header />
 		<div class="wrapper">
 			<section class="accueil">
 				<div class="triangles">
@@ -30,7 +32,16 @@
 </template>
 
 <script>
+	import Header from './Header.vue';
 	export default {
 		name: 'Hero',
+		components: {
+			Header,
+		},
+		data: function () {
+			return {
+				isUserScrolling: false,
+			};
+		},
 	};
 </script>

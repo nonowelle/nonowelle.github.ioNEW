@@ -38,7 +38,7 @@
 								</p>
 								<div class="title-tech">
 									<p>Technologies:</p>
-									<div class="tech">
+									<ul class="tech">
 										<li
 											v-for="tech in project.techs"
 											:key="tech.id"
@@ -46,31 +46,31 @@
 										>
 											{{ tech.name }}
 										</li>
-										<div class="btn">
-											<a
-												target="_blank"
-												:href="project.links[0]"
-												class="site"
-												>Site Web
-												<i
-													class="fas fa-long-arrow-alt-right lien"
-												></i
-											></a>
-										</div>
-										<div
-											v-if="project.links[1]"
-											class="btn"
-										>
-											<a
-												target="_blank"
-												:href="project.links[1]"
-												class="site"
-												>Code
-												<i
-													class="fas fa-long-arrow-alt-right lien"
-												></i
-											></a>
-										</div>
+									</ul>
+									<div class="btn">
+										<a
+											target="_blank"
+											:href="project.links[0]"
+											class="site"
+											>Site Web
+											<i
+												class="fas fa-long-arrow-alt-right lien"
+											></i
+										></a>
+									</div>
+									<div
+										v-if="project.links[1]"
+										class="btn"
+									>
+										<a
+											target="_blank"
+											:href="project.links[1]"
+											class="site"
+											>Code
+											<i
+												class="fas fa-long-arrow-alt-right lien"
+											></i
+										></a>
 									</div>
 								</div>
 							</div>
@@ -175,7 +175,7 @@
 				startAt: 1,
 				focusAt: 'center',
 
-				perView: 2.5,
+				perView: 2,
 				bound: true,
 				gap: 50,
 				breakpoints: {

@@ -70,7 +70,7 @@
 								jobTitle: 'Front-End Developer - Coveo',
 								link: 'https://www.coveo.com/',
 								jobDesc:
-									'SCSS - JS - Vue - GTM - Figma - Cypress - Sitecore - Gulp - Performance - Design',
+									'SCSS - JS - Vue - GTM - Figma - Cypress - Sitecore - Gulp - Performance - Design - C#',
 							},
 						],
 					},

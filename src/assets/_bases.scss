@@ -1,182 +1,187 @@
 @import './node_modules/sal.js/src/sal.scss';
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 .wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 32px;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 32px;
 }
 
 html {
-  width: 100%;
-  margin: 0;
-  overflow-x: hidden;
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
 }
 body {
-  font-family: 'Poppins', 'Convergence', sans-serif;
-  width: 100%;
-  // color: black;
+	font-family: 'Poppins', 'Convergence', sans-serif;
+	width: 100%;
+	// color: black;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 h1 {
-  font-size: 5.5rem;
-  color: $texte-clair;
-  grid-column: 1/1;
-  grid-row: 1/1;
-  margin-bottom: 2rem;
-  color: $gris;
+	font-size: 106px;
+	color: $texte-clair;
+	grid-column: 1/1;
+	grid-row: 1/1;
+	margin-bottom: 2rem;
+	color: $gris;
 }
 
 h2 {
-  font-size: 2.5rem;
-  color: $black;
+	font-size: 2.5rem;
+	color: $black;
 }
 
 h3 {
-  font-size: 2rem;
-  color: $black;
+	font-size: 2rem;
+	color: $black;
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: $aquamarine;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: $aquamarine;
 }
 
 h5 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: $black;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: $black;
 }
 
 h6 {
-  font-size: 1.1rem;
-  color: $black;
+	font-size: 1.1rem;
+	color: $black;
 }
 
 p {
-  color: $texte-clair;
-  font-size: 18px;
+	color: $texte-clair;
+	font-size: 18px;
 }
 
 .btn {
-  display: inline-block;
-  border: none;
-  
-  width: 11rem;
-  height: 3rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
-  transition: 0.3s ease-in-out;
+	display: inline-block;
+	border: none;
 
-  a {
-    display: inline-block;
-    font-size: 1.1rem;
-    padding: 0;
-    margin-bottom: 10px;
-    color: $black;
-    text-decoration: none;
-    transition: 0.3s ease-out;
-  }
+	width: 11rem;
+	height: 3rem;
+	margin-top: 2rem;
+	margin-right: 1rem;
+	transition: 0.3s ease-in-out;
 
-  &:hover,
-  &:active {
-    a {
-      color: $aquamarine;
-      letter-spacing: 0.05rem;
-    }
+	a {
+		display: inline-block;
+		font-size: 1.1rem;
+		padding: 0;
+		margin-bottom: 10px;
+		color: $black;
+		text-decoration: none;
+		transition: 0.3s ease-out;
+	}
 
-    .lien {
-      color: $aquamarine;
-      padding: 1rem 1rem;
-    }
-  }
+	&:hover,
+	&:active {
+		a {
+			color: $aquamarine;
+			letter-spacing: 0.05rem;
+		}
+
+		.lien {
+			color: $aquamarine;
+			padding: 1rem 1rem;
+		}
+	}
 }
 // ------------SCROLL TO TOP BUTTON----------- //
 .button {
-  display: inline-block;
-  background-color: $aquamarine;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  border-radius: 50%;
-  margin: 0;
-  position: fixed;
-  bottom: 2rem;
-  right: 3rem;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 1;
+	display: inline-block;
+	background-color: $aquamarine;
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0;
+	position: fixed;
+	bottom: 2rem;
+	right: 3rem;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 1;
 
-  &:hover {
-    cursor: pointer;
-    background-color: $gris;
-    color: $aquamarine;
-  }
-  &:active {
-    background-color: #555;
-  }
-  &::after {
-    font-family: 'Font Awesome 5 Free';
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    content: ' \f077';
-    font-weight: 800;
-    font-size: 2em;
-    line-height: 3.1rem;
-    color: $black;
-  }
+	&:hover {
+		cursor: pointer;
+		background-color: $gris;
+		color: $aquamarine;
+	}
+	&:active {
+		background-color: #555;
+	}
+	&::after {
+		font-family: 'Font Awesome 5 Free';
+		display: inline-block;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		content: ' \f077';
+		font-weight: 800;
+		font-size: 2em;
+		line-height: 3.1rem;
+		color: $black;
+	}
 }
 
 .show {
-  opacity: 1;
-  visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
 // ---------------- MEDIA-QUERIES --------------------//
 @media (max-width: 767px) {
-  html {
-    font-size: 12px;
-  }
+	html {
+		font-size: 12px;
+	}
+	.header {
+		.wrapper {
+			padding: 0;
+		}
+	}
 
-  .btn {
-    width: 40%;
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-    margin-right: 0.2rem;
+	.btn {
+		width: 40%;
+		margin-top: 0.8rem;
+		margin-bottom: 0.8rem;
+		margin-right: 0.2rem;
 
-    a {
-      font-size: 1rem;
-    }
+		a {
+			font-size: 1rem;
+		}
 
-    &:hover,
-    &:active {
-      a {
-        color: $aquamarine;
-        letter-spacing: 0;
-      }
+		&:hover,
+		&:active {
+			a {
+				color: $aquamarine;
+				letter-spacing: 0;
+			}
 
-      .lien {
-        color: $aquamarine;
-        padding: 0.5rem;
-      }
-    }
-  }
+			.lien {
+				color: $aquamarine;
+				padding: 0.5rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 1023px) {
-  html {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 4rem;
-  }
+	html {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 4rem;
+	}
 }

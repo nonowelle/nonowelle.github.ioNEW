@@ -1,7 +1,7 @@
 .apropos {
-	padding: 10vh 0;
 	background: $background-light;
-	min-height: 100vh;
+
+	padding: 200px;
 
 	.para {
 		padding-top: 2rem;
@@ -153,6 +153,6 @@
 
 @media (max-width: 767px) {
 	.apropos {
-		padding: 5rem 0;
+		padding: 150px 0;
 	}
 }

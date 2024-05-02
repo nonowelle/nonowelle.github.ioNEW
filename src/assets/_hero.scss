@@ -15,7 +15,7 @@
 .hero {
 	background: linear-gradient(
 		180deg,
-		rgba(12, 10, 62, 1) 49%,
+		rgba(12, 10, 62, 1) 57%,
 		rgb(242, 244, 243) 100%
 	);
 	// opacity: var(--background-opacity);
@@ -31,10 +31,17 @@
 	// --background-opacity: calc(
 	// 	100% - 1% * (min(var(--scroll)) - 40) * 100 / 40
 	// );
+
+	> .wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
 }
 
 .accueil {
-	padding: 25% 0;
+	padding: 25vh 0;
 	max-width: 1300px;
 	display: flex;
 	flex-direction: row-reverse;
@@ -92,6 +99,13 @@
 
 // ---------------MEDIA-QUERIES -------------------//@at-root
 @media (max-width: 767px) {
+	.hero {
+		background: linear-gradient(
+			180deg,
+			rgba(12, 10, 62, 1) 57%,
+			rgb(242, 244, 243) 100%
+		);
+	}
 	.accueil {
 		padding: 27vh 0;
 		flex-direction: column;

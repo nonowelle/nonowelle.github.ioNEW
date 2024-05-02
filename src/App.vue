@@ -40,7 +40,7 @@
 		},
 		mounted() {
 			sal({
-				threshold: 0.1,
+				threshold: 0.3,
 			});
 			window.addEventListener('scroll', this.getScrollVar);
 			window.addEventListener('resize', this.getScrollVar);

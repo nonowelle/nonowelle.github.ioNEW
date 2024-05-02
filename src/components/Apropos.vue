@@ -7,7 +7,7 @@
 			<h2
 				class="titre-apropos"
 				data-sal="slide-up"
-				data-sal-delay="200"
+				data-sal-delay="500"
 				data-sal-duration="800"
 			>
 				{{ title }}

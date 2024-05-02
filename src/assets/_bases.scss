@@ -20,6 +20,7 @@ body {
 	font-family: 'Poppins', 'Convergence', sans-serif;
 	width: 100%;
 	// color: black;
+	background-color: $background-light;
 }
 
 li {
@@ -27,7 +28,7 @@ li {
 }
 
 h1 {
-	font-size: 106px;
+	font-size: 4rem;
 	color: $texte-clair;
 	grid-column: 1/1;
 	grid-row: 1/1;
@@ -182,6 +183,6 @@ p {
 		font-size: 14px;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 }

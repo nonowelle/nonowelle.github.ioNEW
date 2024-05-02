@@ -1,53 +1,57 @@
+#contact {
+	background-color: $background-light;
+}
+
 .contact {
-  background-color: $black;
-  padding: 6rem 8rem;
-  text-align: center;
-  border-top-right-radius: 200px;
+	background-color: $black;
+	padding: 6rem 8rem;
+	text-align: center;
+	border-top-right-radius: 200px;
 
-  p {
-    color: $gris;
-    font-size: 1rem;
+	p {
+		color: $gris;
+		font-size: 1rem;
 
-    max-width: 600px;
-    margin: 2rem auto;
-  }
+		max-width: 600px;
+		margin: 2rem auto;
+	}
 }
 
 .contact-link {
-  color: $gris;
-  transition: all ease 200ms;
+	color: $gris;
+	transition: all ease 200ms;
 
-  &:hover {
-    color: $aquamarine;
-    cursor: pointer;
-  }
+	&:hover {
+		color: $aquamarine;
+		cursor: pointer;
+	}
 }
 
 .res {
-  i {
-    margin: 2rem 0.5rem;
-    font-size: 1.5rem;
-    color: $gris;
-    transition: color 0.3s;
+	i {
+		margin: 2rem 0.5rem;
+		font-size: 1.5rem;
+		color: $gris;
+		transition: color 0.3s;
 
-    &:hover {
-      color: $aquamarine;
-    }
-  }
+		&:hover {
+			color: $aquamarine;
+		}
+	}
 }
 
 .title-contact {
-  color: $gris;
+	color: $gris;
 }
 
 #copyright {
-  font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
 // ------------------ MEDIA-QUERIES ------------------//
 
 @media (max-width: 767px) {
-  .contact {
-    padding: 6rem 4rem;
-  }
+	.contact {
+		padding: 6rem 4rem;
+	}
 }

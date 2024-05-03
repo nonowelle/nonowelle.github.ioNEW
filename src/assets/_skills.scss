@@ -66,8 +66,12 @@
 	}
 }
 
-#mongo {
-	@media (max-width: 767px) {
+@media (max-width: 767px) {
+	#mongo {
 		height: 2rem;
+	}
+
+	.skills {
+		border-top-left-radius: 0;
 	}
 }

@@ -156,14 +156,24 @@
 
 .glide__arrow {
 	color: $dark-blue;
-	border: 2px solid $dark-blue;
+	border: 1px solid $dark-blue;
 	transition: all ease 200ms;
 	background-color: $background-light;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 
 	&:hover {
 		border: 2px solid $dark-blue;
 		color: $aquamarine;
 		background-color: $dark-blue;
+		svg {
+			fill: $aquamarine;
+		}
+	}
+
+	svg {
+		fill: $dark-blue;
 	}
 }
 

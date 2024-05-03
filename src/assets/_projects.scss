@@ -5,7 +5,7 @@
 	background-color: $background-light;
 }
 .projets {
-	padding: 8rem 0;
+	padding: 100px 0;
 	background-color: $background-light;
 	row-gap: 6rem;
 
@@ -154,7 +154,7 @@
 }
 
 .glide__slides {
-	padding: 90px 0;
+	padding: 50px 0;
 }
 
 .glide__arrow {
@@ -165,6 +165,9 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:hover {
 		color: $aquamarine;
@@ -176,6 +179,7 @@
 
 	svg {
 		fill: $dark-blue;
+		width: 10px;
 	}
 }
 

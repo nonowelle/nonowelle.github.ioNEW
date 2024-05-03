@@ -4,7 +4,7 @@
 
 .contact {
 	background-color: $black;
-	padding: 6rem 8rem;
+	padding: 100px 0;
 	text-align: center;
 	border-top-right-radius: 200px;
 
@@ -52,8 +52,12 @@
 
 @media (max-width: 767px) {
 	.contact {
-		padding: 6rem 4rem;
+		padding: 80px 32px;
 
 		border-top-right-radius: 0;
+
+		.wrapper {
+			padding: 0;
+		}
 	}
 }

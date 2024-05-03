@@ -120,6 +120,9 @@
 		margin-top: 0;
 
 		transition: all ease 300ms;
+		svg {
+			height: 14px;
+		}
 		&:hover {
 			a,
 			.lien {
@@ -164,7 +167,6 @@
 	border-radius: 50%;
 
 	&:hover {
-		border: 2px solid $dark-blue;
 		color: $aquamarine;
 		background-color: $dark-blue;
 		svg {
